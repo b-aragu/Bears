@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEARS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="Image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <h1>BEARS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="enquire.html">Enquiries</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="contact">
+                <div class="contact-details">
+                    <h2>Contact Details</h2>
+                    <div class="contact-item">
+                        <p><i class="fas fa-map-marker-alt"></i>  <span>Physical Address<br> P.O Box 151 - 40001 NRB</span></p>
+                    </div>
+                    <div class="contact-item">
+                        <p><i class="fas fa-envelope"></i>  Email Address<br><span>baraguantonyy@gmail.com</span></p>
+                    </div>
+                    <div class="contact-item">
+                        <p><i class="fas fa-phone-alt"></i> Phone Number<br><span>+2547 40459672</span></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Send us a message</h2>
+                    <form action="send_message.php" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Comment or Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="foot">
+        <h2>Useful Links</h2> <br>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="enquire.html">Enquiries</a>
+            <a href="about.html">About Us</a>
+    </div>
+    <div class="newsletter">
+        <h2>Email Newsletter</h2>
+        <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+        <form action="mailto:baraguantonyy@gmail.com" method="POST"> <!-- Replace YOUR_FORM_ACTION_URL with your actual form action URL -->
+            <input type="email" name="email" placeholder="Your email address" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+    <p>&copy; BEARS | CIT-223-009/2022 </p>
+</footer>
+</html>

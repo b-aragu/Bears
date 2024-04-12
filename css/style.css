@@ -1,0 +1,420 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* General Styles */
+body {
+    font-family: monospace; /* Machine-like font */
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Text color */
+    line-height: 1.6;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    height: 100vh;
+}
+/* Header Styles */
+header {
+    background-color: #333; /* Dark header background */
+    color: #fff; /* Header text color */
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    position: fixed;
+}
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+/* Navigation Styles */
+nav {
+    margin-top: 20px;
+    text-align: center; /* Align the text in the center */
+        }
+nav a {
+    text-decoration: none;
+    color: #555; /* Navigation link color */
+    margin: 0 15px;
+    display: inline-block;
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+    transition: color 0.3s ease;
+        }
+
+nav a::before, nav a::after {
+    content: '';
+    position: absolute;
+    background-color: #7c5535; /* Underline color */
+    height: 2px; /* Underline height */
+    width: 0;
+    bottom: -2px; /* Position the underline below the text */
+    transition: width ease 0.4s;
+}
+
+nav a::before {
+    left: 0;
+}
+
+nav a::after {
+    right: 0;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main-content p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-content .bear-image {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px; /* Rounded corners for image */
+}
+
+/* Define styles for the .explore class */
+.explore{
+    margin-top: 20px;
+}
+.explore a{
+    padding: 20px;
+    border: 5px solid black;
+    text-decoration: none;
+    color: black;
+}
+.explore a:hover{
+    background-color: #7c5535;
+}
+/* Product section */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.product-image {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: #7c5535;
+}
+/* Footer Styles */
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+}
+.footer1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    height: 100vh;
+    text-align: center;
+}
+.featured {
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+    height: 55%;
+}
+.featured p{
+    margin-top: 40px;
+}
+.foot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 2px; /* Gap between columns */
+    margin-top: 20px;
+    text-align: center; /* Align content center */
+}
+.foot h2 {
+    margin-bottom: 10px;
+}
+.foot a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    text-align: center;        }
+.foot a:hover{
+    color: #555;
+}
+.foot p {
+    margin-top: 8px;
+}
+footer .newsletter, .footer1 .newsletter {
+margin-top: 40px;
+}
+
+.footer1 .newsletter h2 {
+margin-bottom: 8px;
+}
+
+footer .newsletter form, .footer1 .newsletter form {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+
+footer .newsletter input[type="email"], .footer1 .newsletter input[type="email"] {
+padding: 8px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-right: 10px;
+}
+
+footer .newsletter input[type="submit"], .footer1 .newsletter input[type="submit"] {
+padding: 8px 20px;
+background-color: #555;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* enquiries section */
+.contact {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+    margin-left: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding for larger size */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Increased margin for more spacing */
+}
+
+.contact-item i {
+    margin-right: 20px; /* Increased margin for more spacing */
+    font-size: 40px; /* Increased font size */
+    color: #555;
+}
+
+.contact-item p span {
+    margin-right: 70px; /* Increased margin for more spacing */
+    font-size: 14px; /* Increased font size */
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; /* Increased grid gap for more spacing */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px; /* Increased padding for larger size */
+    border-radius: 8px; /* Increased border-radius for rounded corners */
+    border: 2px solid #ccc; /* Increased border thickness */
+    font-size: 16px; /* Increased font size */
+}
+
+.contact-form button {
+    padding: 15px; /* Increased padding for larger size */
+    border-radius: 8px; /* Increased border-radius for rounded corners */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* About section */
+.about-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container a {
+    margin-left: 120px;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: .1em;
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+}
+.image-container a:hover {
+    background-color: #7c5535;
+}
+@media screen and (max-width: 768px) {
+/* Adjust styles for smaller screens */
+
+header h1 {
+font-size: 32px;
+margin-left: 20px;
+}
+.container {
+    height: fit-content;
+}
+
+nav a {
+margin: 0 10px;
+}
+
+.main-content {
+flex-direction: column;
+}
+
+.main-content h1 {
+font-size: 28px;
+margin-top: 15px;
+}
+
+.main-content .bear-image {
+max-width: 80%;
+}
+.explore {
+margin-left: 55px;
+}
+.product-container {
+    flex-direction: column;
+    align-items: center; /* Center products vertically */
+}
+
+.product {
+    max-width: none; /* Remove max-width for full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 30px; /* Add bottom margin for spacing */
+}
+.contact {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact-details,
+.contact-form {
+    margin-left: 0;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.contact-item i {
+    font-size: 30px;
+}
+
+.contact-item p span {
+    font-size: 12px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    font-size: 14px;
+}
+.about-section{
+    overflow-x: hidden;
+}
+}
